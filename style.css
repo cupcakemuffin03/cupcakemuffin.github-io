@@ -356,6 +356,26 @@ a:focus, button:focus, input:focus {
 [role="main"], [role="navigation"], [role="banner"] {
   display: block;
 }
+input:invalid, textarea:invalid {
+    border: 2px solid red;
+    background-color: #ffe5e5;
+}
+
+input:valid, textarea:valid {
+    border: 2px solid green;
+    background-color: #e6ffed;
+}
+
+input, textarea {
+    padding: 10px;
+    margin-bottom: 15px;
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 5px;
+    outline: none;
+    transition: border-color 0.3s, background-color 0.3s;
+}
+
 
 /* Utility / Misc */
 .linkcolor {
